@@ -23,8 +23,8 @@ Es necesario escribir la fórmula 27 de forma que el lenguaje de programación r
 Una vez que se han definido cada una de las variables necesarias para obtener un resultado numérico del funcionamiento del controlador PID, solo faltará representar este resultado de forma gráfica.
 Para graficar los resultados obtenidos basta con utilizar plt.xlabel('Time'), de esta forma el eje X tomará los valores del tiempo que el controlador PID vaya generando. En el caso del eje Y se utiliza plt.ylabel('Temperature'), para graficar los valores de temperatura que el controlador PID genere. Cuando los datos que se desean graficar han sido ordenados, se le indica al programa que grafique la solución obtenida a partir de la fórmula 27, para esto se utiliza plt.plot(tspan,sol), en la línea de código anterior se encuentra contenida la solución o el comportamiento del controlador PID, en formato de vector. En donde “tspan” especifica el intervalo de tiempo durante el que actúa el controlador PID, indicando el tiempo inicial y final de un vector de dos números. 
 
-## INTEGRALES DOBLES
-El programa 3 muestra el código para resolver integrales dobles y graficar el resultado que se obtiene. (Integral_Doble.py)
+## INTEGRALES DOBLES (Integral_Doble.py)
+El programa 3 muestra el código para resolver integrales dobles y graficar el resultado que se obtiene. 
 
 En el código se agregan algunos paquetes para que se compile correctamente. Para trazar graficas es necesario agregar “matplotlib.pyplot”, al manipular muchos datos de lógica matemática, también es necesario agregar el paquete “numpy”, el cual permite realizar cálculos lógicos y matemáticos mediante matrices. Con el paquete “from scipy.integrate import dblquad”, el código tendrá la capacidad de resolver integrales dobles.
 En este caso se necesita graficar el resultado obtenido en 3D, para ello se utiliza la instrucción “ax = fig.add_subplot(1, 2, 2, projection='3d')”, mediante esta instrucción se definen las medidas que tendrá el eje Y,X,Z.  
